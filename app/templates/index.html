@@ -6,12 +6,13 @@
 </head>
 <body>
     <h1>Welcome to news app</h1>
-    <ul>
+    <div class="card">
         {% for sport_news in sport %}
-            <img src=" {{ sport_news.urlToImage }} "
+            <img width="500" src=" {{ sport_news.urlToImage }} ">
             <li> {{ sport_news.title }} </li>
             <p> {{ sport_news.description }} </p>
         {% endfor %}
-    </ul>
+    </div>
+
 </body>
 </html>
