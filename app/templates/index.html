@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>World News</title>
+</head>
+<body>
+    <h1>Welcome to news app</h1>
+    <ul>
+        {% for sport_news in sport %}
+            <img src=" {{ sport_news.urlToImage }} "
+            <li> {{ sport_news.title }} </li>
+            <p> {{ sport_news.description }} </p>
+        {% endfor %}
+    </ul>
+</body>
+</html>
