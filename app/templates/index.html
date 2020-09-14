@@ -1,12 +1,11 @@
 {% extends 'base.html' %}
 
 <!-- Styles block -->
-{% block styles %}
-    <link rel="stylesheet" href=" {{ url_for('static', filename='index.css') }} ">
-{% endblock %}
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css ">
+
 
 {% block content %}
-   <h1>Top to news Headlines</h1>
+   <h1 class="top">Top to news Headlines</h1>
     <div class="container">
         {% for sport_news in sport %}
         <div class="row">
