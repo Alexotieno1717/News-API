@@ -9,3 +9,10 @@ def index():
     # return news.get_top_headlines()
     sport_news = n.get_top_headlines(sources='')
     return render_template('index.html', sport=sport_news['articles'])
+
+
+@app.route('/education')
+def education():
+    n = NewsRequests()
+    news_education = n.get_top_headlines(category='sports')
+    return render_template('education.html', edu=news_education['articles'])

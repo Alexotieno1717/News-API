@@ -1,4 +1,28 @@
-.top{
-    color: red;
-    margin-top: 20%;
+.cards{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.banner{
+    width: 100%;
+    height: 70vh;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-content{
+    background: rgba(0,0,0,.3);
+    height: 70vh;
+    padding-top: 20%;
+    padding-left: 10px;
+}
+.banner-header{
+    width: 40%;
+}
+.banner-news{
+    background: red;
+    color: wheat;
+    width: 9%;
+    padding: 10px;
+    text-align: center;
 }
