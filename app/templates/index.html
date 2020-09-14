@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>World News</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Welcome to news app</h1>
-    <div class="card">
+    <h1>Top to news Headlines</h1>
+    <div class="container">
         {% for sport_news in sport %}
-            <img width="500" src=" {{ sport_news.urlToImage }} ">
-            <li> {{ sport_news.title }} </li>
-            <p> {{ sport_news.description }} </p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card-body mb-4">
+                    <div class="card-content">
+                        <img CLASS="img-fluid" width="500" src=" {{ sport_news.urlToImage }} ">
+                        <h5> {{ sport_news.title }} </h5>
+                        <p> {{ sport_news.description }} </p>
+                        <p> {{ sport_news.publishedAt }} </p>
+                    </div>
+                </div>
+            </div>
+        </div>
         {% endfor %}
     </div>
 
