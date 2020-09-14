@@ -6,10 +6,10 @@
         <div class="banner-content">
             <h3 class="banner-news">News</h3>
             <h3 class="banner-header"> {{ sport[0].title }} </h3>
-            <p> {{ sport[0].description }} </p>
+            <a href=" {{ sport[0].url }} " class="btn btn-sm btn-info">Read more</a>
         </div>
     </div>
-       <h1 class="top">Top to news Headlines</h1>
+       <h2 class="top pl-2 pt-2">Top to news Headlines</h2>
     <div class="row">
         {% for sport_news in sport %}
         <div class="col-sm-4">
@@ -17,10 +17,10 @@
                     <div class="card-body d-flex mt-2" style="width: 24rem;">
                         <div class="card-cont">
                             <img class="img-fluid" width="500" src=" {{ sport_news.urlToImage }} ">
-                            <h5>  {{ sport_news.source.name }} </h5>
+                            <h5 class="text-muted">  {{ sport_news.source.name }} </h5>
                             <h5> {{ sport_news.title }} </h5>
                             <p> {{ sport_news.description }} </p>
-                            <a href=" sport_news.url " target="_blank">Read Me</a>
+                            <a href=" {{ sport_news.url }} " target="_blank">Read Me</a>
 {#                            <p> {{ sport_news.publishedAt }} </p>#}
                         </div>
                     </div>

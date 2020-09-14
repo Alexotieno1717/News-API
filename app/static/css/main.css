@@ -8,12 +8,13 @@
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .banner-content{
     background: rgba(0,0,0,.3);
     height: 70vh;
-    padding-top: 20%;
+    padding-top: 15%;
     padding-left: 10px;
 }
 .banner-header{
@@ -25,4 +26,10 @@
     width: 9%;
     padding: 10px;
     text-align: center;
+}
+
+.top{
+    font-style: italic;
+    font-family: 'Merienda', cursive;
+
 }
