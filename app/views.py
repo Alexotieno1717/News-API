@@ -7,7 +7,7 @@ from .request import NewsRequests
 def index():
     n = NewsRequests()
     # return news.get_top_headlines()
-    sport_news = n.get_top_headlines(sources='abc')
+    sport_news = n.get_top_headlines(sources='')
     return render_template('index.html', sport=sport_news['articles'])
 
 

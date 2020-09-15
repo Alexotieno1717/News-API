@@ -17,12 +17,9 @@
                     <div class="card-body d-flex mt-2" style="width: 24rem;">
                         <div class="card-cont">
                             <img class="img-fluid" width="500" src=" {{ sport_news.urlToImage }} ">
-                            <h5 class="text-muted pt-2">  {{ sport_news.source.name }} </h5>
-                            <h6> {{ sport_news.title }} </h6>
-{#                            <p> {{ sport_news.description }} </p>#}
+                            <h5 class="news-source-name text-muted pt-2"> ~ {{ sport_news.source.name }} ~</h5>
+                            <h6 class="news-title"> {{ sport_news.title }} </h6>
                             <a href=" {{ sport_news.url }} " target="_blank">Read More</a>
-{#                            <p> {{ sport_news.publishedAt|strftime("%d-%Y") }}   </p>#}
-{#                            |strftime("%d-%Y")#}
                         </div>
                     </div>
                 </div>
