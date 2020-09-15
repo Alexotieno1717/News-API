@@ -48,3 +48,14 @@
     font-family: 'Merienda', cursive;
     font-style: italic;
 }
+
+.fa{
+    border: 1px solid white;
+    padding: 10px;
+    transition: 1s;
+}
+
+.fa:hover{
+    background: white;
+    color: black;
+}

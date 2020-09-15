@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     {#    navigation #}
@@ -26,5 +27,15 @@
     {% block content %}
 
     {% endblock %}
+
+    <footer class="bg-dark text-white text-center p-4">
+        <div class="social-media-icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-facebook"></i>
+        </div>
+        <p class="pt-2">Copyright &copy; 2020 World News | design by Alex Otieno</p>
+    </footer>
 </body>
 </html>
