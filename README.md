@@ -27,3 +27,13 @@ Click the Link to visit the site
 * Flask
 * Heroku
 
+## Known Bugs
+
+* There are no known bugs currently but pull requests are allowed incase you spot a bug
+
+## Contact Information
+* If you have any question or contributions, please email me at alexotieno900@gmail.com
+
+## License
+* MIT License:
+* Copyright &copy; 2020 Alex Otieno
