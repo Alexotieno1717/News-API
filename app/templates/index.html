@@ -17,11 +17,12 @@
                     <div class="card-body d-flex mt-2" style="width: 24rem;">
                         <div class="card-cont">
                             <img class="img-fluid" width="500" src=" {{ sport_news.urlToImage }} ">
-                            <h5 class="text-muted">  {{ sport_news.source.name }} </h5>
-                            <h5> {{ sport_news.title }} </h5>
-                            <p> {{ sport_news.description }} </p>
-                            <a href=" {{ sport_news.url }} " target="_blank">Read Me</a>
-{#                            <p> {{ sport_news.publishedAt }} </p>#}
+                            <h5 class="text-muted pt-2">  {{ sport_news.source.name }} </h5>
+                            <h6> {{ sport_news.title }} </h6>
+{#                            <p> {{ sport_news.description }} </p>#}
+                            <a href=" {{ sport_news.url }} " target="_blank">Read More</a>
+{#                            <p> {{ sport_news.publishedAt|strftime("%d-%Y") }}   </p>#}
+{#                            |strftime("%d-%Y")#}
                         </div>
                     </div>
                 </div>
