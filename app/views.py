@@ -12,7 +12,7 @@ def index():
 
 
 @app.route('/education')
-def education():
+def sports():
     n = NewsRequests()
-    news_education = n.get_top_headlines(category='sports')
-    return render_template('education.html', edu=news_education['articles'])
+    news_sports = n.get_top_headlines(category='sports')
+    return render_template('sports.html', edu=news_sports['articles'])
